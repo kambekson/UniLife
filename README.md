@@ -63,11 +63,11 @@ npm run build
 2. Добавьте **Backend service**:
    - Deploy From GitHub → выберите ваш репозиторий.
    - В разделе Variables никаких настроек не требуется, Railway передаст `PORT` автоматически.
-   - Command: `npm start`
+   - Command: `bash start.sh` (Railway ищет `start.sh`, поэтому запускаем через bash)
    - Root Directory: `backend`
 3. Добавьте **Frontend service**:
    - Deploy From GitHub → выберите тот же репозиторий.
-   - Command: `npm run preview`
+   - Command: `bash start.sh`
    - Root Directory: `frontend`
    - Railway выставит `PORT`, а скрипт `preview` уже проксирует его в Vite (`0.0.0.0` + `$PORT`).
 4. После деплоя возьмите публичный URL фронтенда и пропишите его в ваших клиентых настройках (если нужно).
