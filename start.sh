@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/sh
+set -e
 
 SERVICE="${APP_ROLE:-${RAILWAY_SERVICE_NAME:-backend}}"
 
